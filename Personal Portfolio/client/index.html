@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <div class="text">
+                <br><br>
+                <img src="images\logo1.png" class="logo" style="width: 200px; height: 200px;" >
+                <br><br><br>
+                <p>Frontend Designer</p>
+                <h1>Hi, I am <span>Sabarish</span><br>From Chennai</h1>
+            </div>
+            <div>
+                <img class="myphoto" src="images\me.jpg" style="width: 600px; height: 650px;  filter: drop-shadow(0 0 75px rgba(141, 122, 13, 0.8));; border-radius: 10%;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+ <!-- ------------about-------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images\my photo 2.jpg" alt="Sample Image" style="border-radius: 50px;">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <br><br>
+                <p class="aboutme">I’m a second-year BTech student in Artificial Intelligence and Data Science at Rajalakshmi Engineering College with a passion for frontend development. I love building interactive web experiences and exploring how AI and data can shape the future. I’m always eager to learn and grow in the tech space.</p>
+                <br><br>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab(event,'education')">Education</p>
+                    <p class="tab-links" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Web Designing</li>
+                        <li><span>Web Development</span><br>Frontend Designer</li>
+                        <li><span>Currently Learning</span><br>Machine Learning</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Todo list</span><br>First Frontend Project</li>
+                        <li><span>Portfolio</span><br>Personal Portfolio for me</li>
+                        <li><span>Figma design</span><br>Prototype for my SIH Project</li>
+                    </ul>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Frontend Development</li>
+                        <li><span>2024</span><br>UI/UX Designing</li>
+                        <li><span>2023</span><br>Stock Marketing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------services-------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <br><br>
+        <div class="services-list">
+            <div class="wd">
+                <h2>Web Design</h2>
+                <br>
+                <p> I am a passionate web designer with hands-on experience in various projects, and I am always eager to help others with their design and development needs .</p>
+                <br>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="uxd">
+                <h2>UI/UX Design</h2>
+                <br>
+                <p>I am a dedicated UI/UX designer with experience in completing various projects, and I am enthusiastic about helping others create intuitive and user-friendly designs.</p>
+                <br>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="fd">
+                <h2>FullStacks Design</h2>
+                <br>
+                <p>I am a frontend developer with experience in building various projects, and I'm passionate about helping others create responsive and visually appealing web applications.</p>
+                <br>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <br><br>
+ <!-- --------------------Portfolio------------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="images">
+                <div class="work">
+                    <br><br><br>
+                    <img src="images\portfolio1.png" alt="Portfolio" style="width: 400px; height: 225px;">
+                    <br>
+                    <div class="layer">
+                        <h2>My Portfolio</h2>
+                    </div>
+                </div>
+                <div class="work">
+                    <br><br><br>
+                    <img src="images\figma.png" alt="Figma Project" style="width: 400px; height: 225px;">
+                    <br>
+                    <div class="layer">
+                        <h2>Figma design</h2>
+                    </div>
+                </div>
+                <div class="work">
+                    <br><br><br>
+                    <img src="images\todo list.png" alt="todo list" style="width: 400px; height: 225px;">
+                    <br>
+                    <div class="layer">
+                        <h2>To-do List</h2>
+                    </div>
+                <div>    
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+</div>
+
+ <!-- ----------------------Contact---------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9345856812</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="files\my cv.pptx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+         <p>Copyright @ Sabarish. <i class="fa-solid fa-face-smile"></i> Owned by Sabarish</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
